@@ -3,6 +3,7 @@ import './Header.css'; // Import your CSS file
 import { Link } from 'react-router-dom';
 import logo from './Montserrat-2.png';
 import cart from './shopping-cart_icon-icons.com_72552.svg';
+import logout from './log_out_icon_153555.svg';
 import account from './round-account-button-with-user-inside_icon-icons.com_72596.svg';
 import { Offcanvas } from 'react-bootstrap'; // Import Offcanvas from react-bootstrap
 import Button from 'react-bootstrap/Button';
@@ -27,6 +28,9 @@ const Header = () => {
       </Button>
         <Link to="/admin" target="_self">
           <img className="buttons" src={account} alt="account" />
+        </Link>
+        <Link to="/" target="_self">
+          <img className="buttons" src={logout} alt="logout" />
         </Link>
       </div>
 

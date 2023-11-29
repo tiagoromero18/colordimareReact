@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap');
+*{font-family: 'Montserrat', sans-serif;}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+#opac{
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 768px){
+
+        /* HEADER */
+        .header{
+            background-color: #584B53;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1.3em;
+            padding: 1rem; 
+        }
+        
+        .header h1{
+            font-family: 'Montserrat', sans-serif;
+            color: black;
+            display: inline-block;
+        }
+        
+        .logo{
+            display: inline-block;
+            border-radius: 120%;
+            width: 100px;
+        }
+        
+        .l{
+            background-color: #584B53;
+            float:left;
+            margin-right: 30px;
+            margin-left: 30px;
+            margin-top: 0px;
+        }
+        
+        .r{
+            background-color: #584B53;
+            float:right;
+        }
+        
+        .buttons{
+            padding-left: 30px;
+            margin-left: 30px;
+            width: 70px;
+        }
+
+    
+
+        .offcanvas-buttons {
+            width: auto; 
+        }
+
+
+}
+
+/*Para version escritorio*/
+@media screen and (min-width: 769px){
+    /* HEADER */
+    .header{
+        background-color: #584B53;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.3em;
+        padding: 1rem; 
+    }
+    
+    .header h1{
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        display: inline-block;
+    }
+    
+    .logo{
+        display: inline-block;
+        border-radius: 120%;
+        width: 100px;
+    }
+    
+    .l{
+        background-color: #584B53;
+        float:left;
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-top: 0px;
+    }
+    
+    .r{
+        background-color: #584B53;
+        float:right;
+    }
+
+    
+    .buttons{
+        padding-left: 30px;
+        margin-left: 30px;
+        width: 70px;
+    }
+    .shopcartin{
+        background-color: hsl(24, 88%, 97%);
+        width: 400px;
+        height: 200px;
+        margin: 20px 20px 20px 20px;
+        padding: 20px;
+    }
+    
+    .shopcartin img{
+        width: 150px;
+        height: 150px;
+        border-radius: 20%;
+        float: left;
+    }
+    
+    .shopcartin h1{
+        font-size: medium;
+        text-align: center;
+    }
+    
+    .shopcartin h2{
+        font-size: small;
+        padding: auto;
+        text-align: center;
+    }
+    
+    .shopcartin li{
+        font-size: smaller;
+        padding: auto;
+        text-align: center;
+    }
+    
+    .shopcartin p{
+        text-align: center;
+    }
+
+}
+
+  
