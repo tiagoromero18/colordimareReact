@@ -4,7 +4,7 @@ import './ButtonEdit.css';
 
 const EditButton = ({ to, text }) => {
   return (
-    <Link to="/addNewProduct">
+    <Link to="/addNewPro">
       <div id = 'b'>
         <button className="btn" type="button" style={{ backgroundColor: '#FEF5EF' }}>
             Agregar Producto

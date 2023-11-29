@@ -5,6 +5,7 @@ import bs2 from './bs2.jpg';
 import bs3 from './bs3.jpg';
 import { Link } from 'react-router-dom';
 import './Carta.css'; // Import your CSS file
+import cart from './shopping-cart_icon-icons.com_72552.svg';
 
 function Carta() {
   return (
@@ -20,8 +21,11 @@ function Carta() {
                 <li>precio</li>
               </ul>
             </Card.Text>
-            <Link to="/productInd" className="btn btn-primary">
+            <Link to="/productInd" className="btn" style={{ backgroundColor: '#FEF5EF' }}>
               Más información
+            </Link>
+            <Link to="" className="btn" >
+            <img src={cart} alt="shopping cart" style={{ width: '40px', marginRight: '5px' }}/>
             </Link>
           </Card.Body>
         </Card>
@@ -37,8 +41,11 @@ function Carta() {
                 <li>precio</li>
               </ul>
             </Card.Text>
-            <Link to="/productInd" className="btn btn-primary">
+            <Link to="/productInd" className="btn" style={{ backgroundColor: '#FEF5EF' }}>
               Más información
+            </Link>
+            <Link to="" className="btn" >
+            <img src={cart} alt="shopping cart" style={{ width: '40px', marginRight: '5px' }}/>
             </Link>
           </Card.Body>
         </Card>
@@ -54,8 +61,11 @@ function Carta() {
                 <li>precio</li>
               </ul>
             </Card.Text>
-            <Link to="/productInd" className="btn btn-primary">
+            <Link to="/productInd" className="btn" style={{ backgroundColor: '#FEF5EF' }}>
               Más información
+            </Link>
+            <Link to="" className="btn" >
+            <img src={cart} alt="shopping cart" style={{ width: '40px', marginRight: '5px' }}/>
             </Link>
           </Card.Body>
         </Card>

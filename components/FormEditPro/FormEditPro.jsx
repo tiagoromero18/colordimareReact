@@ -1,9 +1,9 @@
 import React from 'react';
-import './FormNewPro.css';
+import './FormEditPro.css';
 import logo from './Montserrat-2.png';
 
 
-const FormNewPro = () => {
+const FormEditPro = () => {
   
     return (
       <div className="login-container2">
@@ -11,19 +11,13 @@ const FormNewPro = () => {
           <img src={logo} alt="Logo" />
         </div>
         <div className="login-form">
-          <form action="./productos">
-            <h4>Nombre del producto</h4>
+          <form action="./productInd">
+            <h4>Nuevo nombre de producto</h4>
             <input type="text" id="username" name="nombre" />
-            <h4>Descripción</h4>
+            <h4>Nuevas Categorias</h4>
             <input type="text" id="username" name="mail" />
-            <h4> # de prendas disponibles</h4>
+            <h4> Prendas disponibles</h4>
             <input type="number" id="password" name="password" />
-            <h4> Precio </h4>
-            <input type="number" id="password" name="password" />
-            <h4> Categorias</h4>
-            <input type="text" id="password" name="password" />
-            <h4> Imagen del producto </h4>
-            <input type="file" id="password" name="foto"></input>
             <h4>Tallas disponibles</h4>
             <div className="Tallas">
             <div id="one">
@@ -74,5 +68,4 @@ const FormNewPro = () => {
     );
   };
   
-export default FormNewPro;
-
+export default FormEditPro;

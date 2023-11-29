@@ -52,155 +52,14 @@ body{
             margin-left: 30px;
             width: 70px;
         }
-        
-        .navbar-custom {
-            background-color: #FEF5EF;
-            font-family: 'Montserrat', sans-serif;
+
+    
+
+        .offcanvas-buttons {
+            width: auto; 
         }
 
 
-/* Shopping cart */
-.leftbox{
-    float:left; 
-    width:33%;
-    height:280px;
-    padding:30px;
-}
-
-.middlebox{
-    float:left; 
-    width:33%;
-    height:280px;
-    padding:30px;
-}
-
-.rightbox{
-    float:right;
-    width:33%;
-    height:280px;
-    padding:30px;
-}
-
-.productimage{
-    float:left; 
-    width:50%;
-    height:280px;
-    padding:30px;
-}
-.productimage img{
-    width:500px;
-}
-
-.other{
-    float:right;
-    width:50%;
-    height:280px;
-    padding:30px;
-}
-
-#one, #two, #three,#four, #five{
-    float:left;
-    width:20%;
-    padding:20px;
-}
-#final img{
-    width:20px;
-    float:right;
-    margin-right: 40px;
-    margin-left: 20px;
-}
-
-#final h4{
-    font-size:100%;
-}
-
-#final button{
-    float:right;
-    padding:10px;
-}
-.info{
-    border:3px solid black;
-    padding: 30px;
-}
-
-.comments{
-    margin-top:100px;
-    border:3px solid black;
-    padding: 30px;
-}
-
-.comments p{
-    border:2px solid #E4BB97;
-    padding: 15px;
-}
-
-.shopcartout{
-    right: 118px;
-    top: 75px;
-    width: 600px;
-    height: 600px;
-    margin: 20px 20px 20px 20px;
-    padding: 20px;
-    background-color: white;
-    position: absolute;
-    z-index: 5;
-}
-
-.shopcartout img{
-    width: 70px;
-    float: right
-}
-
-.shopcartout h4{
-    margin-left: 40px;
-    margin-top: 300px;
-    float: left;
-    text-align: center;
-}
-
-.shopcartout button{
-    margin-right: 40px;
-    margin-top: 300px;
-    float: right;
-    text-align: center;
-    margin-bottom: 300px;
-}
-
-.shopcartin{
-    background-color: hsl(24, 88%, 97%);
-    width: 400px;
-    height: 200px;
-    margin: 20px 20px 20px 20px;
-    padding: 20px;
-}
-
-.shopcartin img{
-    width: 150px;
-    height: 150px;
-    border-radius: 20%;
-    float: left;
-}
-
-.shopcartin h1{
-    font-size: medium;
-    text-align: center;
-}
-
-.shopcartin h2{
-    font-size: small;
-    padding: auto;
-    text-align: center;
-}
-
-.shopcartin li{
-    font-size: smaller;
-    padding: auto;
-    text-align: center;
-}
-
-.shopcartin p{
-    text-align: center;
-}
 }
 
 /*Para version escritorio*/
@@ -240,126 +99,12 @@ body{
         float:right;
     }
 
-    /* NAV BAR */
     
     .buttons{
         padding-left: 30px;
         margin-left: 30px;
         width: 70px;
     }
-    
-    .navbar-custom {
-        background-color: #FEF5EF;
-        font-family: 'Montserrat', sans-serif;
-    }
-    
-    /* Shopping cart */
-    .leftbox{
-        float:left; 
-        width:33%;
-        height:280px;
-        padding:30px;
-    }
-    
-    .middlebox{
-        float:left; 
-        width:33%;
-        height:280px;
-        padding:30px;
-    }
-    
-    .rightbox{
-        float:right;
-        width:33%;
-        height:280px;
-        padding:30px;
-    }
-    
-    .productimage{
-        float:left; 
-        width:50%;
-        height:280px;
-        padding:30px;
-    }
-    .productimage img{
-        width:500px;
-    }
-    
-    .other{
-        float:right;
-        width:50%;
-        height:280px;
-        padding:30px;
-    }
-    
-    #one, #two, #three,#four, #five{
-        float:left;
-        width:20%;
-        padding:20px;
-    }
-    #final img{
-        width:20px;
-        float:right;
-        margin-right: 40px;
-        margin-left: 20px;
-    }
-    
-    #final h4{
-        font-size:100%;
-    }
-    
-    #final button{
-        float:right;
-        padding:10px;
-    }
-    .info{
-        border:3px solid black;
-        padding: 30px;
-    }
-    
-    .comments{
-        margin-top:100px;
-        border:3px solid black;
-        padding: 30px;
-    }
-    
-    .comments p{
-        border:2px solid #E4BB97;
-        padding: 15px;
-    }
-    
-    .shopcartout{
-        right: 118px;
-        top: 75px;
-        width: 600px;
-        height: 600px;
-        margin: 20px 20px 20px 20px;
-        padding: 20px;
-        background-color: white;
-        position: absolute;
-        z-index: 5;
-    }
-    
-    .shopcartout img{
-        width: 70px;
-        float: right
-    }
-    
-    .shopcartout h4{
-        margin-left: 40px;
-        margin-top: 300px;
-        float: left;
-        text-align: center;
-    }
-    
-    .shopcartout button{
-        margin-right: 40px;
-        margin-top: 300px;
-        float: right;
-        text-align: center;
-        margin-bottom: 300px;
-    }
-    
     .shopcartin{
         background-color: hsl(24, 88%, 97%);
         width: 400px;
@@ -395,4 +140,7 @@ body{
     .shopcartin p{
         text-align: center;
     }
+
 }
+
+  

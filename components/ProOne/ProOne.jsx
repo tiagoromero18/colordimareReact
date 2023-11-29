@@ -1,6 +1,8 @@
 import React from 'react';
 import './ProOne.css'; // Import your CSS file
 import bs1 from './bs1.jpg';
+import cart from './shopping-cart_icon-icons.com_72552.svg';
+import { Link } from 'react-router-dom';
 
 const ProOne = () => {
   return (
@@ -61,11 +63,13 @@ const ProOne = () => {
           </div>
           <div id="final">
             <h4>Precio: $$$$</h4>
-            <img src="../Assests/Img/shopping-cart_icon-icons.com_72552.svg" alt="Shopping Cart" />
+            <img src={cart} alt="Shopping Cart" />
             <div id="edit">
+              <Link to = '/editpro'>
               <button type="button" className="btn" style={{ backgroundColor: '#FEF5EF' }}>
                 Editar
               </button>
+              </Link>
             </div>
           </div>
           <p> Categorías que apliquen</p>
@@ -78,16 +82,6 @@ const ProOne = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repudiandae exercitationem autem
                 assumenda voluptas possimus tempora omnis id fugiat eius repellendus, tempore et dolores, itaque dolorum
                 eligendi maiores voluptates esse?
-              </p>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, velit voluptate perspiciatis recusandae
-                at veniam quod ducimus omnis nobis quidem nemo excepturi placeat adipisci maxime earum dolores
-                aspernatur. Labore, ratione.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam deleniti deserunt numquam nisi, impedit
-                labore, eum possimus, aliquid rerum nemo perspiciatis. Eos, aliquid illum doloremque similique iusto
-                non esse quidem?
               </p>
             </div>
             <span

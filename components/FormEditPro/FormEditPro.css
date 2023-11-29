@@ -1,0 +1,72 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FEF5EF;
+  }
+  
+  .login-container2 {
+    position: relative;
+    left: 30%;
+    height: 700px;
+    width: 700px;
+    background-color: hsl(354, 26%, 49%, .4);
+  }
+  
+  .logo2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 40px;
+  }
+  
+  .logo2 img {
+    height: 150px;
+    border-radius: 120%;
+  }
+  
+  .login-form {
+    position: relative;
+    top: 20%;
+    margin-top: 100px;
+    margin-left: 100px;
+    color: white;
+  }
+  
+  .login-form input {
+    position: relative;
+    top: 20%;
+    border-radius: 5%;
+    height: 60px;
+    width: 80%;
+    margin-bottom: 10px;
+    background-color: #FEF5EF;
+  }
+  
+  .login-form-a {
+    position: absolute;
+    right: 70%;
+    top: 70%;
+    margin-top: 90px;
+  }
+  
+  .login-form button {
+    width: 30%;
+    position: relative;
+    left: 25%;
+  }
+  
+  .login-form-a2 {
+    color: #D6E3F8;
+    position: absolute;
+    margin-top: 90px;
+    right: 70%;
+    top: 90%;
+  }
+  #one, #two, #three,#four, #five{
+    float:left;
+    width:15%;
+    height:15%;
+    padding:20px;
+  }
+  #cus{
+    height:15%;
+  }
