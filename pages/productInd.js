@@ -13,7 +13,6 @@ const products = () => {
             <Navegation/>
             <ProOne/>
             
-            <Footer/>
         </div>
     );
   };
