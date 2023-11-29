@@ -1,112 +1,72 @@
 import React, { useState } from 'react';
-import Dropdown from 'react-bootstrap/Dropdown';
-import fil from './bxs-filter-alt.svg';
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import Form from 'react-bootstrap/Form';
+import fil from './bxs-filter-alt.svg';
 
 const Filter = () => {
   const [priceValue, setPriceValue] = useState(5);
+
   const handlePriceChange = (e) => {
     setPriceValue(e.target.value);
   };
 
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          Filtros
-          <img src={fil} alt="Bootstrap" width="30" height="24" />
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <Dropdown>
-                <Dropdown.Toggle variant="secondary" id="tallasDropdown">
-                  Tallas
-                </Dropdown.Toggle>
-                <Dropdown.Menu>
-                  <Dropdown.Item href="#">XS</Dropdown.Item>
-                  <Dropdown.Item href="#">S</Dropdown.Item>
-                  <Dropdown.Item href="#">M</Dropdown.Item>
-                  <Dropdown.Item href="#">L</Dropdown.Item>
-                  <Dropdown.Item href="#">XL</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-            </li>
-            <li className="nav-item">
-              <Dropdown>
-                <Dropdown.Toggle variant="secondary" id="coloresDropdown">
-                  Colores
-                </Dropdown.Toggle>
-                <Dropdown.Menu>
-                  <Dropdown.Item href="#">Blanco</Dropdown.Item>
-                  <Dropdown.Item href="#">Azul</Dropdown.Item>
-                  <Dropdown.Item href="#">Naranja</Dropdown.Item>
-                  <Dropdown.Item href="#">Morado</Dropdown.Item>
-                  <Dropdown.Item href="#">Rojo</Dropdown.Item>
-                  <Dropdown.Divider />
-                  <Dropdown.Item>
-                    <input
-                      className="form-control me-2"
-                      type="search"
-                      placeholder="Search"
-                      aria-label="Search"
-                    />
-                  </Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-            </li>
-            <li className="nav-item">
-              <Dropdown>
-                <Dropdown.Toggle variant="secondary" id="tipoProductoDropdown">
-                  Tipo de producto
-                </Dropdown.Toggle>
-                <Dropdown.Menu>
-                  <Dropdown.Item href="#">Vestidos de baño</Dropdown.Item>
-                  {/* Add more items for other types of products if needed */}
-                </Dropdown.Menu>
-              </Dropdown>
-            </li>
-            <li className="nav-item">
-              <Dropdown>
-                <Dropdown.Toggle variant="secondary" id="precioDropdown">
-                  Precio
-                </Dropdown.Toggle>
-                <Dropdown.Menu>
-                  <Dropdown.Item>
-                    <Form.Label>Range</Form.Label>
-                    <Form.Range
-                      value={priceValue}
-                      onChange={handlePriceChange}
-                      min="1"
-                      max="10"
-                      step="0.5"
-                    />
-                    <span className="range-value">{priceValue}</span>
-                  </Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-            </li>
-          </ul>
-          <button className="btn" type="button" style={{ backgroundColor: '#FEF5EF' }}>
-            Editar
-          </button>
-        </div>
-      </div>
-    </nav>
+    <Navbar bg="light" expand="lg">
+      <Container fluid>
+        <Navbar.Brand href="#">Filtros <img src={fil} alt="Bootstrap" width="30" height="24" /></Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbar-filter" />
+        <Navbar.Collapse id="navbar-filter">
+          <Nav className="me-auto">
+            <NavDropdown title="Tallas" id="nav-dropdown-tallas">
+              <NavDropdown.Item href="#">XS</NavDropdown.Item>
+              <NavDropdown.Item href="#">S</NavDropdown.Item>
+              <NavDropdown.Item href="#">M</NavDropdown.Item>
+              <NavDropdown.Item href="#">L</NavDropdown.Item>
+              <NavDropdown.Item href="#">XL</NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Colores" id="nav-dropdown-colores">
+              <NavDropdown.Item href="#">Blanco</NavDropdown.Item>
+              <NavDropdown.Item href="#">Azul</NavDropdown.Item>
+              <NavDropdown.Item href="#">Naranja</NavDropdown.Item>
+              <NavDropdown.Item href="#">Morado</NavDropdown.Item>
+              <NavDropdown.Item href="#">Rojo</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item>
+                <Form.Control type="search" placeholder="Search" />
+              </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Tipo de producto" id="nav-dropdown-tipoProducto">
+              <NavDropdown.Item href="#">Vestidos de baño</NavDropdown.Item>
+              {/* Add more items for other types of products if needed */}
+            </NavDropdown>
+            <NavDropdown title="Precio" id="nav-dropdown-precio">
+              <NavDropdown.Item>
+                <Form.Label>Range</Form.Label>
+                <Form.Range
+                  value={priceValue}
+                  onChange={handlePriceChange}
+                  min="1"
+                  max="10"
+                  step="0.5"
+                />
+                <span className="range-value">{priceValue}</span>
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+          <Form className="d-flex">
+            <button className="btn" type="button" style={{ backgroundColor: '#FEF5EF' }}>
+              Editar
+            </button>
+          </Form>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 
 export default Filter;
+
 
