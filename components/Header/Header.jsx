@@ -7,6 +7,7 @@ import account from './round-account-button-with-user-inside_icon-icons.com_7259
 
 const Header = () => {
   return (
+    
     <div class="header">
         <div class="l">
             <img class="logo" src={logo} alt='logo'></img>

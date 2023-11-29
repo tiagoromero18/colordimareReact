@@ -1,0 +1,51 @@
+/* FormNewPro.css */
+
+.form-new-pro-container {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FEF5EF;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form-new-pro-container .login-container {
+    background-color: hsl(354, 26%, 49%, .4);
+    width: 50%;
+    max-width: 600px;
+    padding: 100px;
+    margin-top: 100px;
+    color: white;
+    box-sizing: border-box;
+  }
+  
+  .form-new-pro-container .login-form {
+    margin-top: 20px;
+    color: #FEF5EF;
+  }
+  
+  .form-new-pro-container .login-form input {
+    border-radius: 5%;
+    height: 60px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .form-new-pro-container .login-form button {
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .form-new-pro-container .login-form-a2 {
+    color: #D6E3F8;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .form-new-pro-container .form-check {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  

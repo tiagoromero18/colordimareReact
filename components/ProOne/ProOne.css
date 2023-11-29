@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+
+#opac {
+  opacity: 0.7;
+}
+
+.productimage {
+  float: left;
+  width: 100%; /* Make the productimage div take 100% width */
+  height: 280px;
+  padding: 30px;
+}
+
+.productimage img {
+  width: 100%; /* Make the image take 100% width */
+}
+
+.other {
+  float: left;
+  width: 100%; /* Make the other div take 100% width */
+  height: auto; /* Adjust height as needed */
+  padding: 30px;
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+@media screen and (min-width: 769px) {
+  /* For screens wider than 768px, revert to original layout */
+  .productimage,
+  .other {
+    float: left;
+    width: 50%;
+  }
+}
